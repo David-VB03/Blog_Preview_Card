@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url(/assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url(/assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+:root{
+     --yellow-color: hsl(47, 88%, 63%);
+     --white-color: hsl(0, 0%, 100%);
+     --gray-color-500:hsl(0, 0%, 42%);
+     --gray-color-950:hsl(0, 0%, 7%);
+     --spacing-300:24px;
+     --spacing-150:12px;
+     --spacing-100:8px;
+     --spacing-50:4px;
+}
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Figtree';
+    box-sizing: border-box;
+    
+
+}
+
+body{
+    background-color: var(--yellow-color);
+    font-size: 16px;
+   
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   min-height: 100vh;
+}
+section{
+     
+    width: 80%;
+    max-width: 375px;
+    background-color: var(--white-color);
+    box-shadow: 10px 8px 0px 1px rgba(0,0,0,0.92);
+   padding: 1.5rem;
+   border-radius: 1.4rem;
+   border:1px black solid;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: var(--spacing-150);
+   margin: var(--spacing-100) 0;
+}
+
+section img:first-child{
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--spacing-150);
+}
+
+
+/*I'll create css classes for implement some text*/
+
+.text-preset-1{
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.text-preset-2{
+    font-size:16px;
+    letter-spacing: 0;
+    line-height: 1.5;    
+    color: var(--gray-color-500);
+}
+
+.text-preset-3{
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 1.5;
+}
+.card_tag{
+    display: block;
+    min-width: 25%;
+    font-weight: bold;
+    padding: var(--spacing-50);
+    background-color: var(--yellow-color);
+    border-radius: var(--spacing-50);
+    text-align: center;
+    margin-top: 0.2rem;
+}
+.card_author{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: var(--spacing-100);
+    align-items: center;
+    
+}
+.card_author img{
+   max-width: 20%;
+}
+.card_author p{
+    font-weight: bold;
+}
+
