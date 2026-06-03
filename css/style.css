@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Figtree';
-    src: url(assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
+    src: url('assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Figtree';
-    src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format('truetype');
+    src: url('assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
     font-weight: 100 900;
     font-style: italic;
     font-display: swap;
@@ -27,16 +27,14 @@
 *{
     margin:0;
     padding: 0;
-    font-family: 'Figtree';
+    font-family: 'Figtree',sans-serif;
     box-sizing: border-box;
-    
-
+    text-rendering: optimizeLegibility;
 }
 
 body{
     background-color: var(--yellow-color);
     font-size: 16px;
-   
 }
 
 main{
@@ -47,18 +45,19 @@ main{
 }
 section{
      
-    width: 80%;
+   
     max-width: 375px;
     background-color: var(--white-color);
     box-shadow: 10px 8px 0px 1px rgba(0,0,0,0.92);
    padding: 1.5rem;
+   font-size: 1.2rem;
    border-radius: 1.4rem;
    border:1px black solid;
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-   gap: var(--spacing-150);
-   margin: var(--spacing-100) 0;
+   gap: var(--spacing-100);
+   margin: auto 0;
 }
 
 section img:first-child{
@@ -112,5 +111,14 @@ section img:first-child{
 }
 .card_author p{
     font-weight: bold;
+
+}
+
+@media (min-width:600px){
+    
+    section{
+        gap: 1rem;
+        
+    }
 }
 
